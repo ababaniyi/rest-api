@@ -35,12 +35,10 @@ var processBody = function(body, version) {
 };
 
 app.post('/api/v1/parse', function (req, res) {
-    //var body = JSON.parse(req.body);
     res.json(processBody(req.body, 1));
  });
 
  app.post('/api/v2/parse', function (req, res) {
-    //var body = JSON.parse(req.body);
     res.json(processBody(req.body, 2));
  });
 
